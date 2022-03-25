@@ -1,11 +1,11 @@
-from flask import Flask, render_template
+from sanic import Sanic
+from sanic.response import json
 
-app = Flask(__name__)
-
+app = Sanic("My Hello, world app")
 
 @app.route('/ping')
-def hello_world():
-    return 'pong'
+async def test(request):
+    return json({'result': 'pong'})
 
 if __name__ == '__main__':
     app.run()
