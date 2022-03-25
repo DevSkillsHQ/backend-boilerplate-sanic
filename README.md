@@ -1,10 +1,10 @@
-# Backend Boilerplate Flask/Python
+# Backend Boilerplate Sanic/Python
 
 A backbone for your coding challenge.
 
 ## Contents
 
-- [Backend service](app) - a Flask service with a `/ping` endpoint.
+- [Backend service](app) - a Sanic service with a `/ping` endpoint.
 - [E2E test suites](cypress/integration) - a backend and a frontend Cypress test suites. Extend with your tests.
 - [Pipeline](.github/workflows/tests.yml) - a test Runner that executes the Cypress tests on push to a branch other than `master`/`main`.
 
@@ -12,7 +12,7 @@ A backbone for your coding challenge.
 
 ### Backend
 
-- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+- [Sanic](https://sanic.readthedocs.io/en/stable/)
 - [databases](https://pypi.org/project/databases/)
 - [SQLite](https://www.sqlite.org/index.html)
 
